@@ -55,7 +55,7 @@ html, body{
     display: flex;
     align-items: start;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 }
 
 .nav-bar a{
@@ -70,3 +70,19 @@ html, body{
 }
 
 /*CONTENT*/
+.content{
+   display: flex;
+   flex-direction: column; 
+}
+
+/*MAIN BANNER*/
+.main-banner{
+    background-image: url(../imagens/banner2.jpg);
+    background-size: contain;
+    background-position: left center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    height: 520px;
+    width: 1400px;
+}
