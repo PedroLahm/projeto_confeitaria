@@ -3,42 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/estilo.css">
-    <title>Doceria Single Page</title>
+    <title>Confeitaria Single Page</title>
 </head>
 <body>
-
-    <main class="container">
-        <aside class="sidebar">
-            <div class="logo">
-                <img src="imagens/stand.png" alt="Logo">
+    <main id="container">
+        <nav class="nav-bar">
+            <section class="logo">
+                <img src="imagens/stand.png" alt="Logo" id="logo">
                 <h1>Confeitaria</h1>
-            </div>
-            <nav class="nav-bar">
-                <ul>
-                    <li><a href="#">Bem Vindo</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Doces 1</a></li>
-                    <li><a href="#">Doces 2</a></li>
-                    <li><a href="#">Doces 3</a></li>
-                    <li><a href="#">Entre em Contato</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <article class="content">
-                <section class="main-banner">
-                </section>
-                <section class="welcome">
-                </section>
-                <section class="about">
-                </section>
-                <section class="candy-gallery">
-                </section>
-        
-                <section class="contact">
-                </section>
-        </article>
-    </main>
+            </section>
 
+            <section class="links">
+                <ul id="list">
+                    <li><a href="bem-vindo">Bem vindo</a></li>
+                    <li><a href="sobre-nos">Sobre nós</a></li>
+                    <li><a href="doces1">Doces 1</a></li>
+                    <li><a href="doces2">Doces 2</a></li>
+                    <li><a href="doces3">Doces 3</a></li>
+                    <li><a href="contato">Entre em contato</a></li>
+                </ul>
+            </section>
+        </nav>
+
+
+        <article id="main-content">
+            <section class="banner"></section>
+
+            <section id="bem-vindo">
+                <h2>Seja bem vindo a Confeitaria</h2>
+
+                <div class="banner" id="banner1"></div>
+
+                <div class="main-text" id="text1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quis hic obcaecati molestias illum eum eveniet rem voluptate doloremque accusamus. Maxime ullam eligendi nulla repudiandae beatae esse! Laboriosam, libero architecto!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quis hic obcaecati molestias illum eum eveniet rem voluptate doloremque accusamus. Maxime ullam eligendi nulla repudiandae beatae esse! Laboriosam, libero architecto!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quis hic obcaecati molestias illum eum eveniet rem voluptate doloremque accusamus. Maxime ullam eligendi nulla repudiandae beatae esse! Laboriosam, libero architecto!</p>
+
+                    <button>Leia mais</button>
+                </div>
+            </section>
+
+            <section id="sobre-nos">
+                <h2>Sobre nós</h2>
+
+                <div class="banner" id="banner2"></div>
+
+                <div class="main-text" id="text2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quis hic obcaecati molestias illum eum eveniet rem voluptate doloremque accusamus. Maxime ullam eligendi nulla repudiandae beatae esse! Laboriosam, libero architecto!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quis hic obcaecati molestias illum eum eveniet rem voluptate doloremque accusamus. Maxime ullam eligendi nulla repudiandae beatae esse! Laboriosam, libero architecto!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quis hic obcaecati molestias illum eum eveniet rem voluptate doloremque accusamus. Maxime ullam eligendi nulla repudiandae beatae esse! Laboriosam, libero architecto!</p>
+                </div>
+            </section>
+
+            <section id="galeria">
+                <div id="doces1" class="doces">
+                    <h2>Doces 1</h2>
+                    <div id="doces1" class="doces">
+                        <img src="imagens/galeria1.jpg" alt="Doces">
+                        <img src="imagens/galeria2.jpg" alt="Doces">
+                        <img src="imagens/galeria3.jpg" alt="Doces">
+                        <img src="imagens/galeria4.jpg" alt="Doces">
+                        <img src="imagens/galeria5.jpg" alt="Doces">
+                    </div>
+                </div>
+
+                <div id="doces2" class="doces">
+                    <h2>Doces 2</h2>
+                    <div id="doces2" class="doces">
+                        <img src="imagens/galeria6.jpg" alt="Doces">
+                        <img src="imagens/galeria7.jpg" alt="Doces">
+                        <img src="imagens/galeria8.jpg" alt="Doces">
+                    </div>
+                </div>
+
+                <div id="doces3" class="doces">
+                    <h2>Doces 3</h2>
+                    <div id="doces3" class="doces">
+                        <img src="imagens/galeria9.jpg" alt="Doces">
+                        <img src="imagens/galeria10.jpg" alt="Doces">
+                        <img src="imagens/galeria11.jpg" alt="Doces">
+                        <img src="imagens/galeria12.jpg" alt="Doces">
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato">
+                <h2>Entre em contato</h2>
+                <form action="#">
+                    <input type="text" name="nome" id="nome">
+                    <input type="email" name="email" id="email">
+                    <input type="text" name="mensagem" id="mensagem">
+                    <button>Enviar</button>
+                </form>
+            </section>
+        </article>
+
+
+        <footer>
+            <p>Pedro Lahm @ 2025 - Todos os direitos reservados</p>
+        </footer>
+    </main>
 </body>
 </html>
