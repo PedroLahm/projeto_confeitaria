@@ -29,6 +29,10 @@ button{
     cursor: pointer;
 }
 
+button:hover{
+    background-color: #007cba;
+}
+
 /*MAIN*/
 main{
     display: flex;
@@ -102,10 +106,6 @@ div.main-text p{
     margin-bottom: 40px;
 }
 
-div button:hover{
-    background-color: #007cba;
-}
-
 section#bem-vindo, section#sobre-nos, section#galeria, section#contato{
     margin-top: 65px;
     padding: 0 45px 0 75px;
@@ -143,6 +143,39 @@ div.gal-1, div.gal-2, div.gal-3{
     gap: 25px;
 }
 
+/*contato*/
+#contato form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contato input, #contato textarea{
+    border: 1px solid #006598;
+
+    width: 480px;
+    padding: 10px;
+}
+
+#contato textarea{
+    height: 160px;
+}
+
+#contato input::placeholder, #contato textarea::placeholder{
+    color: #006598;
+    font-family: Helvetica;
+}
+
+#contato button{
+    margin-top: 0px;
+}
+
+/*FOOTER*/
+footer{
+    text-align: center;
+    color: #5e5d5d;
+    margin-top: 35px;
+}
 /*IMAGES*/
 nav div#image-stand{
     background-image: url(../imagens/stand.png);
