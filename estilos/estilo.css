@@ -12,10 +12,151 @@ body{
     height: 100vh;
 
     font-family: Arial, Helvetica, sans-serif;
+
+    overflow-x: hidden;
 }
 
+/*MAIN*/
+main{
+    display: flex;
+}
 
 /*NAV*/
 nav{
     background-color: #006598;
+
+    width: 20%;
+    padding: 10px 80px;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+}
+
+div#box1{
+    position: fixed;
+}
+
+nav div#image-stand{
+    background-image: url(../imagens/stand.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    margin: 25px 0 15px 0;
+
+    height: 90px;
+}
+
+nav h1{
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 70px;
+}
+
+nav li{
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+nav a:hover{
+    color: lightgray;
+    text-decoration: underline;
+}
+
+/*ARTICLE*/
+article{
+    width: 80%;
+}
+
+section#bem-vindo{
+    margin-top: 65px;
+    padding: 0 45px;
+}
+
+section h2{
+    color: #006598;
+    font-weight: 500;
+    font-size: 3em;
+
+    margin-bottom: 35px;
+}
+
+div#box2{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 50px;
+}
+
+div.main-text{
+    margin-top: 1px;
+    width: 745px;
+
+    color: #5e5d5d;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 35px;
+}
+
+div.main-text p{
+    margin-bottom: 40px;
+}
+
+div button{
+    background-color: #006598;
+    color: white;
+    font-size: 17px;
+
+    margin-top: 20px;
+    padding: 15px 18px;
+    width: 170px;
+
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+div button:hover{
+    background-color: #007cba;
+}
+
+/*IMAGES*/
+section#main-banner{
+    background-image: url(../imagens/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+    height: 570px;
+
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.500);
+}
+
+.banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    width: 350px;
+    height: 500px;
+
+    border-radius: 5px;
+
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.500);
+}
+
+#banner1{
+    background-image: url(../imagens/banner3.jpg);
 }
