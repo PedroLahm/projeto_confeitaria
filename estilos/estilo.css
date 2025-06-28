@@ -16,6 +16,19 @@ body{
     overflow-x: hidden;
 }
 
+button{
+    background-color: #006598;
+    color: white;
+    font-size: 17px;
+
+    margin-top: 20px;
+    padding: 15px 18px;
+    width: 170px;
+
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
 /*MAIN*/
 main{
     display: flex;
@@ -36,17 +49,6 @@ nav{
 
 div#box1{
     position: fixed;
-}
-
-nav div#image-stand{
-    background-image: url(../imagens/stand.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-
-    margin: 25px 0 15px 0;
-
-    height: 90px;
 }
 
 nav h1{
@@ -74,13 +76,9 @@ nav a:hover{
 }
 
 /*ARTICLE*/
+/*configurações-geral-article*/
 article{
     width: 80%;
-}
-
-section#bem-vindo{
-    margin-top: 65px;
-    padding: 0 45px;
 }
 
 section h2{
@@ -91,16 +89,7 @@ section h2{
     margin-bottom: 35px;
 }
 
-div#box2{
-    display: flex;
-    flex-direction: row nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    gap: 50px;
-}
-
 div.main-text{
-    margin-top: 1px;
     width: 745px;
 
     color: #5e5d5d;
@@ -113,24 +102,59 @@ div.main-text p{
     margin-bottom: 40px;
 }
 
-div button{
-    background-color: #006598;
-    color: white;
-    font-size: 17px;
-
-    margin-top: 20px;
-    padding: 15px 18px;
-    width: 170px;
-
-    border: 1px solid transparent;
-    cursor: pointer;
-}
-
 div button:hover{
     background-color: #007cba;
 }
 
+section#bem-vindo, section#sobre-nos, section#galeria, section#contato{
+    margin-top: 65px;
+    padding: 0 45px 0 75px;
+}
+
+/*bem-vindo*/
+div#box2{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 50px;
+
+    padding-right: 30px;
+}
+
+/*sobre-nos*/
+div#box3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 50px;
+}
+
+/*galeria*/
+section#galeria{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+div.gal-1, div.gal-2, div.gal-3{
+    display: flex;
+    gap: 25px;
+}
+
 /*IMAGES*/
+nav div#image-stand{
+    background-image: url(../imagens/stand.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    margin: 25px 0 15px 0;
+
+    height: 90px;
+}
+
 section#main-banner{
     background-image: url(../imagens/banner2.jpg);
     background-repeat: no-repeat;
@@ -144,6 +168,7 @@ section#main-banner{
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.500);
 }
 
+/*Banner*/
 .banner{
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,4 +184,28 @@ section#main-banner{
 
 #banner1{
     background-image: url(../imagens/banner3.jpg);
+}
+
+#banner2{
+    background-image: url(../imagens/banner4.jpg);
+}
+
+/*Galeria*/
+div.gal-1 img{
+    width: 190px;
+    height: 200px;
+
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.350);
+}
+
+div.gal-2 img{
+   width: 332px;
+   height: 200px;
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.350);
+}
+
+div.gal-3 img{
+    width: 242px;
+    height: 200px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.350);
 }
